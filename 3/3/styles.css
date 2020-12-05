@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  max-width: 150px;
+  min-width: 150px;
+  max-height: 150px;
+  min-height: 150px;
+  border-radius: 100%;
+}
+
+#pref {
+  background-color: red;
+}
+
+.content {
+  margin-top: 30px;
+}
+
+.names {
+  margin-top: 10px;
+}
+
+.names-text{
+    font-weight: 700
+}
+
+.connect-btn {
+  margin-top: 10px;
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: #666666;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 25px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+  transition: all 0.2s ease-in-out;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.row {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  margin: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  height: 330px;
+  transition: all 0.2s ease-in-out;
+}
+
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card:hover .connect-btn{
+    background: linear-gradient(to bottom, #8C72F3 5%, #7D5EF9 100%);
+    color: #FFFFFF;
+    text-shadow: none;
+    box-shadow: none;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
